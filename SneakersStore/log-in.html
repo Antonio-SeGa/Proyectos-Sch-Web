@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up/ Log In</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-login.css">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Fredoka:wght@300&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/1eb793e989.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <h1>SNKRS</h1>
+            </a>
+        </div>
+        <!-- barra de navegación -->
+        <div class="container">
+          <nav>
+              <a class="navegacion__enlace navegacion__enlace--activo" href="ult-lanz.html">Ultimos lanzamientos</a>
+              <a class="navegacion__enlace" href="hombre.html">Hombre</a>
+              <a class="navegacion__enlace" href="mujer.html">Mujer</a>
+              <a class="navegacion__enlace" href="nino.html">Niño</a>
+              <a class="navegacion__enlace" href="marcas.html">Marcas</a>
+          </nav>
+
+           <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="mainer">
+        <div class="main">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="txt" placeholder="User name" required="">
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Sign up</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form>
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Login</button>
+                    </form>
+                </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+
+      &copy; Derechos reservados SNKRS.mx
+   
+      <div>
+       <a href="#"  class="redes">
+         <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#"  class="redes">
+         <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="redes" >
+         <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+   </footer>
+</body>
+
+<script src="javascript/jqueryjs.js"></script>
+<script defer src="javascript/funcion-slider.js"></script>
+<script src="javascript/funcion-hamb.js"></script>
+</html>

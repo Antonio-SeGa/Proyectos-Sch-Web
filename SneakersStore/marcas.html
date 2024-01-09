@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Fredoka:wght@300&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleproductos.css">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/1eb793e989.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <div class="main-header__index">
+          <a href="index.html"><h1>SNKRS</h1></a>
+        </div>
+
+        <div class="main-header__btns">
+          <a href="login.html" class="main-header__link">Log In/ Sign Up <i class="fas fa-user"></i></a>
+          <a href="#" class="main-header__btn">My cart <i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+      </div>
+      <!-- barra de navegación -->
+      <div class="container">
+        <nav>
+           <!-- <a class="navegacion__enlace navegacion__enlace--activo" href="#">Ultimos lanzamientos</a> -->
+            <a class="navegacion__enlace" href="ult-lanz.html">Ultimos lanzamientos</a>
+            <a class="navegacion__enlace" href="hombre.html">Hombre</a>
+            <a class="navegacion__enlace" href="mujer.html">Mujer</a>
+            <a class="navegacion__enlace" href="nino.html">Niño</a>
+            <a class="navegacion__enlace navegacion__enlace--activo" href="marcas.html">Marcas</a>
+        </nav>
+         <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
+      </div>
+  </header>
+
+  <br>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Grid de productos -->
+        <div class="productos">
+          <section class="producto estilo-c">
+            <a href="https://www.nike.com/mx/">
+              <div class="img-container">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQcAAADACAMAAAA+71YtAAAAflBMVEX///8AAADx8fH29vb5+fmbm5vh4eHOzs7X19eKior8/Pyenp4jIyO4uLiXl5fU1NRnZ2dwcHBJSUnGxsa/v78xMTGtra09PT1ycnIUFBTn5+d/f39eXl6kpKQrKysSEhKPj49OTk4cHBxCQkJWVlY3NzcnJyd6enofIB+pqqk12YLnAAAD30lEQVR4nO3a2YKiMBAFUAPK0gqCuCMurbbd//+DA+KKSSCoSXDueZi3oYpqKimCrRYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANNWXozoDJqMtMVhnLjGYACfpRBLrkHTlxarMGB6WsdTnNFql/3zJjFimbfsj8vsnsyXSh48MpcYr0Xa6C0JIYEuOa816kiNyWF64TIvQ86UvWOaIjGXHpEsXhD3JTDy5DXE0IESHpcH2JyQX9FXEDwlZK14jTSsJTjUgvbWhJId1GttSEvnE8qbLcxHIRkVDZLw0+EBN6Fa2IMQTchUqG2r7WfiOmtj2en9TAzLz1TRExjhmIL8tTKezIHc2nvQkztK1cZulMJIc1hoHv/dFIAclO8RFnCchJVa+I829cF+oAel11TXEkZfnIWuIatvuqFiDdJGOJIVnsk6ZyHgm0wVh91gDMouVbtm584717qeybf0FM0oRyCRR3BBH7jmdt0aZe1NKM2QWtg7TfCs65/P9thDtYbyk14AQV5PzL7N36dH3XL/vb1g1IJOxoun5UUzeV4e2kwQrZhFIKPt8haN/TevFfTEfh4wFIa/6WpOGyN2m+rqrmpwFIW8IT4u18aJ7m9xrNi/TXm+5NVD5Oslg3qX3/EBn5gerXCMNv5DEdxm6z10sfW3iN0NmN9Rmh7iaF/5S9a9keIef0hoQosP0TBEX0qzXGGbhHIVln2j4KGSMYqbi53Km49NemygWyl8nmfyHZMXevNMFoUozZFw9GyJHGfUqp2t4097jf6db6jM90wxpOVfZ08yhW74xXCw0mp6pqI39XfJEGP2qC8JRb51dT6/ZseBhlTzhrBFOsigerHINPFPe/dQ1ZmZPPZ9LX5sqLwg57aZnOs4A/OM75vVZ/jLsJBQrQdpfCj/GCDG++TcyCWI3dQgGnBMElp1mr5Mc/fK7qevQjIbIJW8qwkr1xxhBwh1fySb7fVVjeiIjMgVUpMXHGEEm7+ywFj0+xogyauwCPNpPzwwG9QNbTStdPsaIe2EdtuNGLYz3XlaHqdpfbjzLEHphYtLw7FnQ5vkibLX6MXZN02er0KjpmY352l3JvpHDAo1VfrNMu6jBO0RR7cG6gdMzT1R+xxSTvwYctYkZiFch0PdjTH3CK4Rev9x4HaEtY9+cozZhbvntn4TNnp7LVCvE9mOGBaZuaRFm7mfMjSVs/seZ+LP74daY9e1+6/8/Rci0hw8/9vzdudGHbpJcRj+Jg+1yNFruQrcTzT9uZgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAV/gHbkirAi4jVPQAAAABJRU5ErkJggg==" alt="producto 1">
+              </div>
+             </a>
+            <div class="info-container__marca">
+              <h3>Nike</h3>
+            </div>
+          </section>
+  
+          <section class="producto estilo-c">
+              <a href="https://www.adidas.mx/">
+                <div class="img-container">
+                  <img src="data:image/png;base64,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" alt="producto 1">
+                </div>
+               </a>
+               <div class="info-container__marca">
+                <h3>adidas</h3>
+              </div>
+          </section>
+  
+          <section class="producto estilo-c">
+              <a href="https://mx.puma.com/">
+                <div class="img-container">
+                  <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Puma-Logotipo-1980-.....jpg" alt="producto 1">
+                </div>
+               </a>
+               <div class="info-container__marca">
+                <h3>Puma</h3>
+              </div>
+          </section>
+  
+          <section class="producto estilo-c">
+            <a href="https://mx.puma.com/">
+              <div class="img-container">
+                <img src="https://1000marcas.net/wp-content/uploads/2020/01/Air-Jordan-logo.png" alt="producto 1">
+              </div>
+             </a>
+             <div class="info-container__marca">
+              <h3>JORDAN</h3>
+            </div>
+        </section>
+        </div>   
+      </main>
+  
+      <br>
+  
+
+    <footer class="footer">
+
+      &copy; Derechos reservados SNKRS.mx
+   
+      <div>
+       <a href="#"  class="redes">
+         <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#"  class="redes">
+         <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="redes" >
+         <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+   </footer>
+</body>
+
+<script src="javascript/jqueryjs.js"></script>
+<script defer src="javascript/funcion-slider.js"></script>
+<script src="javascript/funcion-hamb.js"></script>
+</html>

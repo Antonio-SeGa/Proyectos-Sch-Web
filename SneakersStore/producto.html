@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENIS NIKE AIR FORCE 1 LE (GS)</title>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Fredoka:wght@300&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleproductos.css">
+    <link rel="stylesheet" href="css/styleproducto.css">
+    <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/1eb793e989.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+          <div class="main-header__index">
+            <a href="index.html"><h1>SNKRS</h1></a>
+          </div>
+
+          <!-- Botones de login y carrito -->
+          <div class="main-header__btns">
+            <a href="login.html" class="main-header__link">Log In/ Sign Up <i class="fas fa-user"></i></a>
+            <a href="#" class="main-header__btn">My cart <i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+        </div>
+        <!-- barra de navegación -->
+        <div class="container">
+          <nav>
+             <!-- <a class="navegacion__enlace " href="#">Ultimos lanzamientos</a> -->
+              <a class="navegacion__enlace" href="ult-lanz.html">Ultimos lanzamientos</a>
+              <a class="navegacion__enlace" href="hombre.html">Hombre</a>
+              <a class="navegacion__enlace" href="mujer.html">Mujer</a>
+              <a class="navegacion__enlace" href="nino.html">Niño</a>
+              <a class="navegacion__enlace" href="marcas.html">Marcas</a>
+          </nav>
+           <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+
+    <br>
+    <!-- Contenido principal -->
+    <main>
+      <!-- Descripcion del producto -->
+      <div class="articulo">
+        <section class="Img-prod">
+          <img src="https://images.solecollector.com/complex/image/upload/c_fill,f_auto,fl_lossy,q_auto,w_1100/nlialqwndkrllsueqfng.jpg">
+        </section>
+
+        <section class="Info-prod">
+          <div class="prod">
+            <h3>TENIS NIKE AIR FORCE 1 LE (GS)</h3>
+            <p>Modelo: DH2920-111</p>
+          </div>
+
+          <div>
+            <strong>$1,799.00 MXN</strong>
+            <label class="tallas">Tallas</label>
+
+            <p>Cantidad</p>
+            <form  class="cantidad">
+              <label class="btn_cantidad" onclick="decrementar()"><i class="fa-solid fa-minus"></i></label>
+              <input class="inpt_cant" type="text" value="1" id="item" name="item" disabled>
+              <label class="btn_cantidad" onclick="incrementar()"><i class="fa-solid fa-plus"></i></label>
+            </form>
+               
+              <script>
+              function incrementar() {
+              valor = document.getElementById("item");
+              if (valor.value < 10)valor.value ++;
+              }
+               
+              function decrementar() {
+              valor = document.getElementById("item");
+              if (valor.value > 01)valor.value --;
+              }
+              </script>
+          </div>
+
+          <br>
+          <div class="Botones">
+            <label class="Boton_comprar">
+                <a href="#">Comprar</a>
+            </label>
+
+            <label class="Boton_añadir">
+              <a href="#">Añadir a carrito</a>
+            </label>
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <br>
+
+    <!-- Relacionados -->
+    <h2>Tambien te puede interesar</h2>
+        <!-- Grid de productos -->
+        <div class="productos">
+          <section class="producto estilo-c">
+            <a href="#">
+              <div class="img-container">
+                <img src="img/snkrs-1.jpg" alt="producto 1">
+                <span class="promo">Nuevo</span>
+              </div>
+             </a>
+            <div class="info-container">
+              <h3>Producto de muestra</h3>
+              <strong>$60</strong>
+              <a href="#" class="add-cart">Añadir al carrito</a>
+            </div>
+          </section>
+  
+          <section class="producto estilo-c">
+              <a href="#">
+                <div class="img-container">
+                  <img src="img/snkrs-2.jpg" alt="producto 1">
+                  <span class="promo">Nuevo</span>
+                </div>
+               </a>
+              <div class="info-container">
+                <h3>Producto de muestra</h3>
+                <strong>$60</strong>
+                <a href="#" class="add-cart">Añadir al carrito</a>
+              </div>
+          </section>
+  
+          <section class="producto estilo-c">
+              <a href="#">
+                <div class="img-container">
+                  <img src="img/snkrs-3.jpg" alt="producto 1">
+                  <span class="promo">Nuevo</span>
+                </div>
+               </a>
+              <div class="info-container">
+                <h3>Producto de muestra</h3>
+                <strong>$60</strong>
+                <a href="#" class="add-cart">Añadir al carrito</a>
+              </div>
+          </section>
+  
+          <section class="producto estilo-c">
+              <a href="#">
+                <div class="img-container">
+                  <img src="img/snkrs-4.jpg" alt="producto 1">
+                  <span class="promo">Nuevo</span>
+                </div>
+               </a>
+              <div class="info-container">
+                <h3>Producto de muestra</h3>
+                <strong>$60</strong>
+                <a href="#" class="add-cart">Añadir al carrito</a>
+              </div>
+          </section>
+  
+          <section class="producto estilo-c">
+              <a href="#">
+                <div class="img-container">
+                  <img src="img/snkrs-1.jpg" alt="producto 1">
+                  <span class="promo">Nuevo</span>
+                </div>
+               </a>
+              <div class="info-container">
+                <h3>Producto de muestra</h3>
+                <strong>$60</strong>
+                <a href="#" class="add-cart">Añadir al carrito</a>
+              </div>
+          </section>
+  
+          <section class="producto estilo-c">
+              <a href="#">
+                <div class="img-container">
+                  <img src="img/snkrs-2.jpg" alt="producto 1">
+                  <span class="promo">Nuevo</span>
+                </div>
+               </a>
+              <div class="info-container">
+                <h3>Producto de muestra</h3>
+                <strong>$60</strong>
+                <a href="#" class="add-cart">Añadir al carrito</a>
+              </div>
+          </section>
+  
+        </div> 
+        <br>
+
+        <!-- Pie de pagina -->
+    <footer class="footer">
+
+      &copy; Derechos reservados SNKRS.mx
+   
+      <div>
+       <a href="#"  class="redes">
+         <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#"  class="redes">
+         <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="redes" >
+         <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+   </footer>
+</body>
+
+
+<script src="javascript/jqueryjs.js"></script>
+<script defer src="javascript/funcion-slider.js"></script>
+<script src="javascript/funcion-hamb.js"></script>
+<script src="javascript/app.js"></script>
+</html>
