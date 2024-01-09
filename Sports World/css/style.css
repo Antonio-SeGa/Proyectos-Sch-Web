@@ -1,0 +1,408 @@
+:root{
+    /* Paleta de colores */
+    --color-1: #fff;
+    --color-2: #4464D6;
+    --color-3: #A0C7EB;
+    --color-4: #000;
+    --color-5: #06357a;
+
+    /* Fuentes externas */
+    --fuente-inicio: 'Palette Mosaic', cursive;
+    --fuente-news: 'League Gothic', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+.contenedor{
+    /*especifica la anchura del area de contenido de un elemento. */
+    width: 120rem;
+    /*establece el margen para los cuatro lados*/
+    margin: 0 auto;
+}
+
+/* Contenedor principal */
+.contenedor-principal{
+    margin: auto;
+    padding: 10px;
+    background-color: var(--color-3);
+    width: 1040px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* Tamaño de los titulos */
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+/* Navegacion */
+.header{
+    background-color: var(--color-2);
+}
+
+/* Header */
+.header__contenedor{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.contenedor-sec{
+    background-color: var(--color-5);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.header__contenedor img{
+    width: 30px;
+}
+
+.cont-home{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-left: 5rem;
+}
+
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-home{
+    padding-left: 2rem;
+    text-decoration: none;
+    font-family: var(--fuente-inicio);
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-1);
+}
+
+.navegacion{
+    padding-right: 2rem;
+}
+
+.triangle {
+    width: 0px; 
+    height: 0px; 
+    border-left:  12px solid transparent;
+    border-right: 12px solid transparent; 
+    border-bottom: 12px solid var(--color-5);
+    padding: 1rem;
+}
+
+/* BPM */
+.navegacion__enlace,
+.navegacion__enlace-sec{
+    text-decoration: none;
+    font-family: 'Gill Sans MT';
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-1);
+    margin: 0.5rem;
+}
+
+.navegacion__enlace:hover,
+.navegacion__enlace--activo{
+    color: var(--color-5);
+}
+
+.navegacion__enlace-sec:hover{
+    color: var(--color-3);
+}
+
+.news__cont img{
+    width: 100%;
+}
+
+.news__cont{
+    border: 1px solid var(--color-4);
+    padding: 1rem;
+}
+
+.news__cont:hover{
+    color: var(--color-5);
+}
+
+/* Pie de pagina */
+.footer{
+    margin: auto;
+    padding: 0.3rem;
+    background-color: var(--color-2);
+}
+
+.footer__texto{
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: var(--color-1);
+}
+
+/* Titulos */
+.news_titulo, .titulo{
+    font-family: var(--fuente-news);
+    font-size: 42px;
+    text-align: center;
+    color: var(--color-4);
+    padding: 0rem;
+}
+
+
+/* Pagina de Futbol */
+.ligas{
+    display:grid;
+    grid-template-columns: repeat(5,1fr); 
+    /* column-gap: 5rem; */
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.liga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--color-4);
+}
+
+.liga:hover{
+    background-color:var(--color-2);
+    color: var(--color-1);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.liga a:hover{
+    color: var(--color-1);
+}
+
+.liga a{
+    text-decoration: none;
+    font-family: 'BIZ UDPMincho', serif;
+    text-align: center;
+    color: var(--color-4);
+}
+
+.liga img{
+    width: 167px;
+    height: 167px;
+}
+
+/* .liga img:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+} */
+
+.Federation{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titulos */
+.titulo,
+.titulo-nfl,
+.titulo-liga-beis{
+    font-family: var(--fuente-news);
+    font-size: 32px;
+    text-align: left;
+    color: var(--color-4);
+    padding-left: 1rem;
+}
+
+
+/* F. Americano */
+.conferencias{
+    display:grid;
+    grid-template-columns: repeat(4,1fr); 
+    /* column-gap: 5rem; */
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.division{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 0.5rem;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--color-4);
+    background-color: var(--color-3);
+}
+
+.division h3{
+    font-family: 'BIZ UDPMincho', serif;
+}
+
+.division__equipo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.division__equipo a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: var(--color-4);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.division__equipo a:hover{
+    color: var(--color-2);
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+
+span{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+/* Beisbol */
+.ligas-beis{
+    display:grid;
+    grid-template-columns: repeat(3,1fr); 
+    /* column-gap: 5rem; */
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+
+/* Basquetbol */
+.divisiones-basq{
+    display:grid;
+    grid-template-columns: repeat(3,1fr); 
+    /* column-gap: 5rem; */
+    column-gap: 3rem;
+    row-gap: 2rem;
+    /* padding: 2rem; */
+    width: 3700px;
+    height: 500px;
+}
+
+
+.nav{
+    width: 300px;
+    height: 700px;
+    /* background-color: violet; */
+}
+
+.cont{
+    margin: 0 auto;
+    display:flex;
+}
+
+/* Responsiva */
+@media(max-width: 768px){
+    .nav-home{
+        padding-left: 0.5rem;
+        font-size: 15px;
+    }
+
+    .cont{
+        margin: auto 0;
+        display:flex;
+    }
+    
+    .nav{
+        visibility: hidden;
+        gap: 2rem;
+        width: 0;
+        height: 0;
+    }
+
+    .navegacion__enlace,
+    .navegacion__enlace-sec{
+        text-decoration: none;
+        font-family: 'Gill Sans MT';
+        font-size: .8rem;
+        text-align: center;
+        color: var(--color-1);
+        margin: 4px;
+    }
+
+    .navegacion__enlace .navegacion__enlace--activo .triangle{
+        /* visibility: hidden; */
+        visibility:hidden;
+    }
+
+    .ligas{
+        display:grid;
+        grid-template-columns: repeat(5,1fr); 
+        /* column-gap: 5rem; */
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .ligas{
+        display:grid;
+        grid-template-columns: repeat(1,1fr); 
+        /* column-gap: 5rem; */
+    }
+
+    .conferencias{
+        display:grid;
+        grid-template-columns: repeat(2,1fr); 
+        /* column-gap: 5rem; */
+    }
+
+    .Federation{
+        width: auto;
+        height: auto;
+    }
+    .divisiones-basq{
+        display:grid;
+        grid-template-columns: repeat(1,1fr); 
+        /* padding: 2rem; */
+        width: 100%;
+    }
+
+    .ligas-beis{
+        display:grid;
+        grid-template-columns: repeat(1,1fr); 
+        /* column-gap: 5rem; */
+    }
+
+    .contenedor-principal{
+        width: 100%;
+    }
+
+    .news__cont img{
+        width: 100%;
+    }
+    
+}
